@@ -14,6 +14,7 @@
 		0230E88620EB942A005CF975 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0230E88420EB942A005CF975 /* LaunchScreen.storyboard */; };
 		0230E89120EB942A005CF975 /* HowlSWRevealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0230E89020EB942A005CF975 /* HowlSWRevealTests.swift */; };
 		0230E89C20EB942A005CF975 /* HowlSWRevealUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0230E89B20EB942A005CF975 /* HowlSWRevealUITests.swift */; };
+		0230E8AC20EB96ED005CF975 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0230E8AA20EB96EC005CF975 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		0230E89720EB942A005CF975 /* HowlSWRevealUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HowlSWRevealUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0230E89B20EB942A005CF975 /* HowlSWRevealUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowlSWRevealUITests.swift; sourceTree = "<group>"; };
 		0230E89D20EB942A005CF975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0230E8A920EB96EC005CF975 /* HowlSWReveal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HowlSWReveal-Bridging-Header.h"; sourceTree = "<group>"; };
+		0230E8AA20EB96EC005CF975 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		0230E8AB20EB96EC005CF975 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +104,12 @@
 				0230E87B20EB9428005CF975 /* AppDelegate.swift */,
 				0230E87D20EB9428005CF975 /* ViewController.swift */,
 				0230E87F20EB9428005CF975 /* Main.storyboard */,
+				0230E8AB20EB96EC005CF975 /* SWRevealViewController.h */,
+				0230E8AA20EB96EC005CF975 /* SWRevealViewController.m */,
 				0230E88220EB942A005CF975 /* Assets.xcassets */,
 				0230E88420EB942A005CF975 /* LaunchScreen.storyboard */,
 				0230E88720EB942A005CF975 /* Info.plist */,
+				0230E8A920EB96EC005CF975 /* HowlSWReveal-Bridging-Header.h */,
 			);
 			path = HowlSWReveal;
 			sourceTree = "<group>";
@@ -193,6 +200,7 @@
 				TargetAttributes = {
 					0230E87720EB9428005CF975 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					0230E88B20EB942A005CF975 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -258,6 +266,7 @@
 			files = (
 				0230E87E20EB9428005CF975 /* ViewController.swift in Sources */,
 				0230E87C20EB9428005CF975 /* AppDelegate.swift in Sources */,
+				0230E8AC20EB96ED005CF975 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YS9FD49N82;
 				INFOPLIST_FILE = HowlSWReveal/Info.plist;
@@ -439,6 +449,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bbplatform.HowlSWReveal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HowlSWReveal/HowlSWReveal-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YS9FD49N82;
 				INFOPLIST_FILE = HowlSWReveal/Info.plist;
@@ -457,6 +470,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bbplatform.HowlSWReveal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HowlSWReveal/HowlSWReveal-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
